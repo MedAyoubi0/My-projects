@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Ayoubi Survey Form</h1>
+    <p id="description">Thank you for taking this</p>
+    <form id="survey-form">
+      <!-- Name Input -->
+      <label for="name" id="name-label"><span class="title">Name</span> <br>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required />
+      </label><br>
+      <!-- Email Input -->
+      <label for="email" id="email-label"><span class="title">Email</span> <br>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required/>
+      </label><br>
+      <!-- Age Input -->
+      <label for="age" id="number-label"><span class="title">Age (optional)</span> <br>
+        <input type="number" id="number" name="age" placeholder="Age" min="13" max="120" />
+      </label>
+      <br>
+      <label for="select"><span class="title">Who are you?</span><br> 
+        <select id="dropdown" name="select">
+          <option disabled>Select one option</option>
+          <option>Student</option>
+          <option>Employer</option>
+          <option>Freelancer</option>
+        </select>
+      </label>
+      <br>
+      <label><span class="title">Your Domain</span> <br>
+        <input name="radios" value="Hello" type="radio" id="Chose">
+        Web
+      </label>
+      <br>
+      <label>
+        <input name="radios" value="Hey" type="radio" id="Choose">
+        Apps
+      </label>
+      <br>
+      <label><span class="title">Your Technologies</span> <br>
+        <input name="checkbox" type="checkbox" id="html" value="html">
+        HTML
+      </label>
+      <br>
+      <label>
+        <input name="checkbox" type="checkbox" id="css" value="css">
+        CSS
+      </label>
+      <br>
+      <span class="title">Some Infos About You</span><br>
+      <textarea placeholder="Bio"></textarea><br>
+      <label>
+        <input type="submit" id="submit">
+      </label>
+    </form>
+  </body>
+</html>
